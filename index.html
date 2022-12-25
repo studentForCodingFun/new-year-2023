@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown 2023</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2><span>countdown to New year</span>2023</h2>
+        <h1 class="advance">Advance ❤️</h1>
+        <hr>
+        <h1 class="tome">I wish you all a very happy new year</h1>
+        <div class="countdown">
+            <div id="day">U</div>
+            <div id="hours">S</div>
+            <div id="minute">M</div>
+            <div id="second">A</div>
+        </div>
+    </div>
+    <h4>सामना ना हो कभी तन्हाइयों से,
+        हर अरमान हर ख्‍वाब पूरा हो आपका।
+        यही दुआ है दिल की गहराइयों से,
+        नए साल 2023 की हार्दिक शुभकामनाएं।
+        आपके सारे गम खुशियों से तोल दूं,
+        अपने सारे राज आपके सामने खोल दूं,
+        कोई मुझसे पहले न बोल दे,
+        इसलिए सोचा क्यों न आज ही,
+        आपको हैप्पी न्यू इयर बोल दूं!
+        एडवांस हैप्पी न्यू इयर 2023
+        इस रिश्ते को ऐसे ही बनाये रखना दिल में,
+        अपनी यादों के चिराग जलाये रखना
+        बहुत प्यारा सफर रहा 2022 में आपके साथ
+        बस ऐसा ही 2023 में भी बनाये रखना..
+        रोशनी को अंधेरे से पहले,
+        दिलों को धड़कने से पहले,
+        प्यार को मोहब्बत से पहले,
+        खुशी को गम से पहले,
+        आपको और आपके परिवार के,
+        हैप्पी न्यू ईयर 2023 सबसे पहले!
+        नव वर्ष की हार्दिक बधाई
+        बीते साल को विदा इस कदर करते हैं,
+        जो नहीं किया अब तक वो भी कर गुजरते हैं!
+        नया साल आने की खुशियां तो सब मनाते हैं,
+        चलो हम इस बार, बीते साल की यादों का जश्न मनाते हैं!
+        हैपी न्यू इयर 2023</h4><hr>
+        <h4>
+            सूरज सा चमकता रहें आपका जीवन
+            सितारों सा झिलमिलाए आपका आंगन
+            इन्हीं दुआओं के साथ आपको,
+            नए साल 2023 की खूब सारी शुभकामनाएं
+            आप हमारी करीब न सही पर दिल में रहते है,
+            इसलिए हर दर्द सह सकते है,
+            कहीं कोई और आपको पहले विश न कर दे,
+            इसलिए पहले से विश करते हैं,
+            नए वर्ष की एडवांस में शुभकामाएं
+            Advance Happy New Year 2023</h4>
+    <script type="text/javascript">
+        var countDate = new Date('jan 1, 2023 00:00:00').getTime();
+
+        function newYear(){
+            var now = new Date().getTime();
+            gap = countDate - now;
+
+            var second = 1000;
+            var minute = second * 60;
+            var hours = minute * 60;
+            var day = hours * 24;
+
+            var d = Math.floor(gap / (day));
+            var h = Math.floor((gap % (day)) / (hours));
+            var m = Math.floor((gap % (hours)) / (minute));
+            var s = Math.floor((gap % (minute)) / (second));
+
+            document.getElementById('day').innerText = d;
+            document.getElementById('hours').innerText = h;
+            document.getElementById('minute').innerText = m;
+            document.getElementById('second').innerText = s;
+
+        }
+
+        setInterval(function(){
+            newYear();
+        }, 100)
+    </script>
+</body>
+</html>
